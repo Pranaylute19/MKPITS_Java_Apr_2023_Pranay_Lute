@@ -3,6 +3,7 @@
 #include<conio.h>
 void funt(){
     char ch;
+    clrscr();
     scanf("%c",&ch);
     if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='u'){
     printf("it is vowel");
