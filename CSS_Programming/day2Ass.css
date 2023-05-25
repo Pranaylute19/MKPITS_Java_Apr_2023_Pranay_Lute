@@ -1,0 +1,7 @@
+.box1{
+			background: greenyellow;
+			height: 200px;
+			width: 200px;
+			border-top-left-radius: 30px;
+			padding: 40px;
+		}
