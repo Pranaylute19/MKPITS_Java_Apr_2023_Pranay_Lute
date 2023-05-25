@@ -1,0 +1,16 @@
+/*.cls{
+	color: red;
+}*/
+.spn{
+	color: skyblue;
+	background-color:rgba(250, 250, 190,0.5) ;
+}
+.std{
+	color: skyblue;
+	background-color:rgb(25, 25, 90);
+}
+.hd{
+	
+	border:9px solid rgb(255, 25, 25);
+	
+}
