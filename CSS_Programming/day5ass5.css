@@ -1,0 +1,19 @@
+ul{
+	background-color: lightslategrey;
+	height: 50px;
+	width: 100%;
+}
+li{
+	display: inline;
+	margin: 20px;
+}
+img{
+	height: 50px;
+
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	border-right: 2px solid red;
+}

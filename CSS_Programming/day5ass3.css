@@ -1,0 +1,22 @@
+ul{
+	background-color: lightgray;
+	height: 60px;
+	width: 100%;
+}
+img{
+	height: 60px;
+}
+li{
+	display: inline;
+	margin: 20px;
+}
+a{
+	
+	height: 40px;
+	width: 50px;
+}
+a:hover{
+
+	
+	text-decoration: none;
+}
