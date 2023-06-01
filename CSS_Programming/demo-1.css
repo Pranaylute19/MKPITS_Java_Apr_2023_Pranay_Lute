@@ -1,0 +1,14 @@
+.navbar{
+    background-color: red;
+    height: 100px;
+    width: 100%;
+    
+ 
+    position: sticky;
+    top: 0px;
+    
+}
+.nav{
+    background-color: aqua;
+    
+}
