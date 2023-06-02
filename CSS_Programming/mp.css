@@ -1,0 +1,13 @@
+.first{
+    height: 300px;
+    width: 300px;
+    border: 2px solid red;
+    
+
+}
+.second{
+     height: 200px;
+     width: 200px;
+     background-color: aqua;
+     
+}
