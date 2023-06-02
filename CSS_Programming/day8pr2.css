@@ -1,0 +1,17 @@
+*{
+    bottom: 0;
+    padding: 0;
+}
+.nav{
+    position: sticky;
+    bottom: 0;
+    background-color: blanchedalmond;
+    height: 40px;
+}
+li{
+    display: inline;
+   
+}
+ul{
+    height: 40px;
+}
