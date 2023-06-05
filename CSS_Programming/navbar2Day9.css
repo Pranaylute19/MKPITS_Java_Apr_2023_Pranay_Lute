@@ -1,0 +1,36 @@
+
+.dropdown{
+    position: relative;
+    
+
+}
+.content {
+    position: absolute;
+    display: none;
+    z-index: 1;
+
+}
+.dropdown:hover .content{
+    display: block;
+    width: 120px;
+    background-color: rgb(239, 130, 201);
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+
+}
+ul{
+    list-style-type: none;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+li{
+    display: inline-block;
+    padding: 20px; 
+}
+.dropdown .content li:hover{
+    padding: 12px 20px;
+    background-color: yellowgreen;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
