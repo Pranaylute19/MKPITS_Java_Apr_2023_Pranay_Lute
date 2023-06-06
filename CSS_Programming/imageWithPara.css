@@ -1,0 +1,27 @@
+
+.img{
+    
+    height: 480px;
+    width: 771px;
+    position:absolute ;
+    opacity: 0.6;
+    border: 2px solid black;
+}
+.para{
+    position: relative;
+    z-index: 1;
+    width: 750px;
+    background-color: rgb(178, 125, 55);
+    opacity: 0.5;
+    margin-left: 15px;
+    padding: 5px;
+    color: aliceblue;
+
+}
+.headinng{
+    background-color: antiquewhite;
+    opacity: 0.5;
+    width: 314px;
+    margin-left: 200px;
+
+}
