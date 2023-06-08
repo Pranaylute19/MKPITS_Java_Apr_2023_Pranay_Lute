@@ -1,0 +1,37 @@
+.rightsection{
+    float: right;
+    margin-right: 30px;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+/* .carousel-inner{
+    position: relative;
+
+} */
+.d-block{
+    opacity: ;
+}
+.prof{
+    border-radius: 50%;
+}
+li:hover{
+    color: blue;
+    text-shadow: 1px 1px 4px rgb(237, 9, 47);
+}
+.rightsection:hover{
+    color: blue;
+    text-shadow: 1px 1px 4px rgb(237, 9, 47);
+}
+.rounded-3 {
+    box-shadow: 15px 15px 15px black;
+}
+.col-sm-4{
+    box-shadow: 10px 10px 10px rgb(30, 3, 3); 
+}
+/* .text-center{
+    background-color: beige;
+} */
+
