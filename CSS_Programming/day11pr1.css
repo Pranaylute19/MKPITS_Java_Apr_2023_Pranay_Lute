@@ -1,0 +1,19 @@
+.main{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    height: 40px;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+    color: rgb(226, 40, 49);
+    padding-left: 30px;
+    padding-right: 30px;
+
+    
+}
+li:hover{
+    background-color: rgb(28, 224, 28);
+    color: black;
+}
