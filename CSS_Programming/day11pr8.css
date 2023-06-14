@@ -1,0 +1,13 @@
+.card{
+    top: 100px;
+    left: 100px;
+}
+img{
+    left: -80px;
+    position: relative;
+    top: 90px;
+    border-radius: 50%;
+}
+.card-body{
+    bottom: 200px;
+}

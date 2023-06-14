@@ -1,0 +1,17 @@
+p{
+    border: 4px rgb(22, 4, 4);
+    background-color: grey;
+    
+}
+img{
+   position: relative;
+    height: 90px;
+    width: 90px;
+    bottom: 50px;
+    border-radius: 50%;
+    left: 60px;
+}
+.card{
+    top: 100px;
+    left: 100px;
+}
