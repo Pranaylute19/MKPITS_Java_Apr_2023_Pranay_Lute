@@ -1,0 +1,12 @@
+.inset{
+ 
+    height: 200px;
+    width: 200px;
+    box-shadow:outset 3px 3px 4px 4px black ;
+}
+.outset{
+    
+    height: 200px;
+    width: 200px;
+    box-shadow:inset 3px 3px 3px 4px black ;
+}
