@@ -1,16 +1,8 @@
-Class CommonObjectVehicle{
+class CommonObjectVehicleInheritance{
 String Vehiclenumber;
 String fuel ;
 String owner;
-integer NoOfTyre;
-string name;
-double chasisNumber
-}
-
-
-Class 4-w extend commonObject{
-String WheelSteering
-String Typeof4-w;
-String FuelType;
-String permit;
+Integer NoOfTyre;
+String name;
+double chasisNumber;
 }

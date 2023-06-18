@@ -1,5 +1,5 @@
-Class manufacturing extend employee{
-    Area area;
+class Manufacturing extends EmployeeIndustryInheritance{
+    // Area area;
     String Machines;
     Integer productOutput;
 }

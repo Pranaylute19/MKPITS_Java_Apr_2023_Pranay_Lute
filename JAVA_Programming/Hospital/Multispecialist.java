@@ -1,7 +1,7 @@
-Class Multispecialist extend hospital{
+class Multispecialist extends HospitalInheritance{
 Integer cardialsurgen;
 String nurse;
 String laboratories;
 String surgicaltable;
-list <doctors>Doctors;
+// list <doctors>Doctors;
 }

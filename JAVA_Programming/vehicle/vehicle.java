@@ -1,6 +1,6 @@
-Class vehicle {
-List<mirors> mirrors ;
+class CommonObjectVehicleInheritance {
+// List<mirors> mirrors ;
 String TypeofVehicle;
 String typeoftyre;
-Integer No.ofseat;
+Integer Noofseat;
 }

@@ -1,5 +1,5 @@
-class Diamond extend jwellary{
-	List<typesOfDiamond>typesOfDiamond;
-	 string designOfDiamond;
-	 integer sizweDiamond
+class Diamond extends Jwellary{
+	// List<typesOfDiamond>typesOfDiamond;
+	 String designOfDiamond;
+	//  integer sizweDiamond
 	}

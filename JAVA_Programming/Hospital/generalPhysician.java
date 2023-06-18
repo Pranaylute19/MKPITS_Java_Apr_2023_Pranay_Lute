@@ -1,5 +1,5 @@
-Class generalPhysician extend hospital{
+class GeneralPhysician extends HospitalInheritance{
 Integer room;
 double fee;
- string Doctor;
+ String Doctor;
 }

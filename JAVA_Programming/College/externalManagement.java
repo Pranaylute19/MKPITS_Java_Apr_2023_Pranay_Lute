@@ -1,5 +1,5 @@
-class externalManagement extend college{
-	string parking;
-	string watchman;
-	string housekeeping;
+class ExternalManagement extends CollegeInheritance{
+	String parking;
+	String watchman;
+	String housekeeping;
 	}

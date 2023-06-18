@@ -1,5 +1,5 @@
-class Silver extend jwellary{
+class Silver extends Jwellary{
 	String Color;
 	String SilverjwellaryQuality;
-	string polishSilver;
+	String polishSilver;
 	}

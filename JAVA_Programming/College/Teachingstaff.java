@@ -1,5 +1,5 @@
-class Teachingstaff extend College{
-	list<Teachers>teachers;
-	string HOD;
+class Teachingstaff extends CollegeInheritance{
+	// list<Teachers>teachers;
+	String HOD;
 	String Supervisor;
 	}

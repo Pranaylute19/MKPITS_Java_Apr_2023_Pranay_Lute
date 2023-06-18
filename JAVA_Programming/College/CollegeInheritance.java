@@ -1,7 +1,7 @@
-class collegeInheritance{
-	string uniform;
-	string department;
-	string human;
+class CollegeInheritance{
+	String uniform;
+	String department;
+	String human;
 	
 	}
 	

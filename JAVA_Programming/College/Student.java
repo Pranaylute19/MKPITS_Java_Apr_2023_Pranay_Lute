@@ -1,5 +1,5 @@
-class student extend college{
-	string standards;
+class Student extends CollegeInheritance{
+	String standards;
 	String Sections;
-	string gender;
+	String gender;
 	}
