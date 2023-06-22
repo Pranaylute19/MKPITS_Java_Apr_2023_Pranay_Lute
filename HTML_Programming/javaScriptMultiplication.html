@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="abc"></h2>
+    <button onclick="mult()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+    <button onclick="substraction()">Substraction</button>
+    <button onclick="modulus()">Modulous</button>
+    <button onclick="fullname()">Fullname</button>
+
+</body>
+<script>
+    let x=10;
+    let y=15;
+
+    let name="pranay";
+    let last="Lute";
+    function mult(){
+            z=x*y;
+            document.getElementById("abc").innerHTML=z;
+    }
+    function divide(){
+        z=x/y;
+        document.getElementById("abc").innerHTML=z;
+    }
+    function substraction(){
+        z=x-y;
+        document.getElementById("abc").innerHTML=z;
+    }
+    function modulus(){
+        z=x%y;
+        document.getElementById("abc").innerHTML=z;
+    }
+    function fullname(){
+        let fullname=name+" "+" "+last;
+        document.getElementById("abc").innerHTML=fullname;
+    }
+</script>
+</html>

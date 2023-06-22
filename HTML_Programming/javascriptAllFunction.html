@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <!-- <button onclick="document.write(z)">click me</button> -->
+    <button onclick="add()">Add</button>
+    <button onclick="Multiply()">Multiply</button>
+    <button onclick="Sub()">Substract</button>
+    <button onclick="Division()">Divide</button>
+    <button onclick="Modulus()">Modulous</button>
+    <button onclick="fullname()">Full name</button>
+
+    <h1 id="output"></h1>
+
+    <script>
+        let x = 20;
+        let y = 10;
+        let z = x + y;
+
+        let name="pranay";
+        let last="Lute";
+        
+
+       
+        function add(){
+            let z = x + y;
+            document.getElementById("output").innerHTML = z;
+        }
+        function Multiply(){
+            let z = x * y;
+            document.getElementById("output").innerHTML = z;
+        }
+        function Sub(){
+            let z = x - y;
+            document.getElementById("output").innerHTML = z;
+        }
+        function Division(){
+            let z = x / y;
+            document.getElementById("output").innerHTML = z;
+        }
+        function Modulus(){
+            let z = x % y;
+            document.getElementById("output").innerHTML = z;
+        }
+        function fullname(){
+            let fullname=name+" "+" "+last;
+            document.getElementById("output").innerHTML=fullname;
+        }
+    </script>
+</body>
+</html>
