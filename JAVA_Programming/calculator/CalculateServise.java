@@ -16,6 +16,7 @@ public class CalculateServise {
                 break;
             case "*":
                 CalculateMulTiply calculateMulTiply = new CalculateMulTiply();
+				
 				 System.out.println(operend1+" * "+ operend2+"="+ calculateMulTiply.getCalculatevalue(operend1,operend2));
 
                 break;
@@ -26,8 +27,9 @@ public class CalculateServise {
 				
 			case "%":
 				CalculateModulous calculateModulous=new CalculateModulous();
-				System.out.println(calculateModulous.getCalculatevalue(operend1,operend2));
+				System.out.println(operend1+ " % "+ operend2 +"="+ calculateModulous.getCalculatevalue(operend1,operend2));
 				break;
+			
         }
     }
 }
