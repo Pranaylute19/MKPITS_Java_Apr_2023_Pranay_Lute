@@ -1,0 +1,4 @@
+interface Calculation{
+	void Signature();
+	}
+	
