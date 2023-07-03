@@ -1,0 +1,6 @@
+interface Example{
+	
+	void style();
+	}
+	
+	
