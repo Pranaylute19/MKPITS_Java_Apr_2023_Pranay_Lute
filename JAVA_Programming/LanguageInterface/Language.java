@@ -1,5 +1,5 @@
 abstract class Language{
-	void coding(){
+	default void coding(){
 		System.out.println("This is Programming Code");
 		}
 	}
