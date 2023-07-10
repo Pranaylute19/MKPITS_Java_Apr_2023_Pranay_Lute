@@ -1,0 +1,2 @@
+abstract StarDiamondArrayAbstract{
+	abstract starDiamond
