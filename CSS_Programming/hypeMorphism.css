@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(251, 174, 85);
+   }
+.hype1{
+    background: rgba( 65, 11, 11, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 15.5px );
+-webkit-backdrop-filter: blur( 15.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.hype2{
+    background: rgba( 233, 78, 78, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.hype3{
+    background: rgba( 59, 236, 196, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.hype4{
+    background: rgba( 184, 233, 134, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
