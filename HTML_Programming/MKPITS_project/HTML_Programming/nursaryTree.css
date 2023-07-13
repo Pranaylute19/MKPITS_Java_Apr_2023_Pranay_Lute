@@ -1,0 +1,36 @@
+.collapse img{
+    border-radius: 50%;
+}
+div img{
+    width: 100%;
+    
+}
+.navbar{
+    position: sticky;
+    
+    top: 0;
+    background: rgb(177,223,44);
+background: linear-gradient(342deg, rgba(177,223,44,0.9726015406162465) 6%, rgba(223,44,213,0.9726015406162465) 15%, rgba(204,223,100,1) 25%, rgba(223,215,44,1) 30%, rgba(75,167,186,1) 45%, rgba(110,150,238,1) 48%, rgba(86,157,156,1) 59%, rgba(139,101,120,1) 73%, rgba(66,192,180,1) 87%, rgba(233,104,23,0.9866071428571429) 98%);
+}
+ul .dropdown-item:hover{
+    background-color: rgb(199, 197, 197);
+}
+.carousel-item img{
+    height: 520px;
+}
+ .carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .p{
+    background: rgba(226, 62, 62, 0.25);
+box-shadow: 0 8px 32px 0 rgba(160, 165, 237, 0.37);
+backdrop-filter: blur( 7px );
+-webkit-backdrop-filter: blur( 7px );
+border-radius: 10px;
+border: 1px solid rgba(241, 238, 238, 0.18);
+}
+h3{
+    padding-top: 20px;
+    text-align: center;
+}
+.col img{
+    border-radius: 30px;
+}
+

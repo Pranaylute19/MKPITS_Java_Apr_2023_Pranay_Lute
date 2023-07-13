@@ -1,0 +1,36 @@
+body{
+    background: rgb(177,223,44);
+background: radial-gradient(circle, rgba(177,223,44,0.9726015406162465) 6%, rgba(223,44,213,0.9726015406162465) 15%, rgba(204,223,100,1) 25%, rgba(223,215,44,1) 30%, rgba(75,167,186,1) 45%, rgba(110,150,238,1) 48%, rgba(86,157,156,1) 59%, rgba(139,101,120,1) 73%, rgba(66,192,180,1) 87%, rgba(233,104,23,0.9866071428571429) 98%);
+   }
+.hype1{
+    background: rgba( 65, 11, 11, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 15.5px );
+-webkit-backdrop-filter: blur( 15.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.hype2{
+    background: rgba( 233, 78, 78, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.hype3{
+    background: rgba( 59, 236, 196, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.hype4{
+    background: rgba( 184, 233, 134, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
