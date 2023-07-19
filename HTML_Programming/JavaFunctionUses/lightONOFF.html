@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Testimonal.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="lightONOFF.css">
+</head>
+<body>
+   
+    <div class="text-center pt-5">
+        <h2>Light ON/Off Task</h2>
+    <div id="light1">
+        <img src="/Assets/OFF_light.png" height="400px" width="400px" alt=""><br>
+        <button type="button" onclick="getSwitch()" class="btn btn-success">ON</button>
+
+        
+    </div>
+    <div id="light2">
+        <img src="/Assets/ON_light.png" height="400px" width="300px" alt=""><br>
+        <button type="button" onclick="getSwitch()" class="btn btn-danger">OFF</button>
+    </div>
+</div>
+
+    <script>
+        function getSwitch()
+        {
+            if(document.getElementById("light1").style.display=='none'){
+                    document.getElementById("light1").style.display='block'
+                    document.getElementById("light2").style.display="none"
+            }
+            else{
+                document.getElementById("light2").style.display='block'
+                    document.getElementById("light1").style.display="none"
+            }
+        }
+    </script>
+</body>
+</html>

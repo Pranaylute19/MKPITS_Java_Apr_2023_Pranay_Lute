@@ -70,15 +70,24 @@ strong{
     font-size: 20px;
 }
 .nav-item a:hover{
-    background-color: rgb(185, 245, 245);
-    border-radius: 30px;
-    color: rgb(8, 0, 0);
+    background-color: rgb(43, 200, 248);
+    border-radius: 20px;
+    
     
 }
+
+
 .navbar{
     background: rgb(22,28,30);
 background: linear-gradient(183deg, rgba(22,28,30,1) 36%, rgba(99,187,201,1) 77%);
 }
 li .btn{
     margin-left: 350px;
+}
+li .btn:hover{
+    background-color: rgb(8, 170, 170);
+}
+.col{
+    background: rgb(203, 214, 149);
+background: radial-gradient(circle, rgb(234, 247, 170) 1%, rgba(240,246,192,0.07064075630252098) 100%);
 }

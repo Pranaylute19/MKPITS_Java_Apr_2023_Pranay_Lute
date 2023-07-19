@@ -1,0 +1,16 @@
+#light2{
+    display: none;
+}
+
+body{
+    background-color: antiquewhite;
+}
+div{
+    align-content: center;
+}
+.btn{
+    font-size: 35px;
+    width: 100px;
+    height: 60px;
+    border-radius: 30px;
+}
