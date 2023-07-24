@@ -1,0 +1,28 @@
+.about{
+    position: absolute;
+}
+.abt{
+    font-size: 70px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 100px;
+    padding-left: 90px;
+    background: rgba( 255, 255, 255, 0.1 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 2px );
+     -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 500px;
+    border: 2px black;
+}
+.navbar{
+    background: rgb(22,28,30);
+background: linear-gradient(183deg, rgba(22,28,30,1) 36%, rgba(99,187,201,1) 77%);
+}
+.abt p{
+    color: aquamarine;
+    /* text-decoration:underline overline solid 2px black ; */
+    
+}
