@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ButtonOnclickDisplayShow.css">
+</head>
+<body>
+    <div>
+        
+    <div id="btn">
+            <button onclick="getSwitch1()">click</button>   
+    </div>
+    <div id="division">
+        <div class="div1">
+            
+        </div>
+        <div class="div2">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.Dolorem minima optio magnam. Molestias nobis numquam facilis facere error eos expedita eveniet aut soluta temporibus porro quasi vero quo aspernatur quia in nulla voluptate deserunt repellat rem, ad obcaecati amet reiciendis. Odit porro obcaecati commodi! Placeat voluptatum recusandae iure rerum magnam.
+            <button onclick="getSwitch()">close</button>
+        </div>
+     </div>
+    </div>
+    <script>
+        function getSwitch(){
+            if(document.getElementById("btn").style.display=='none'){
+                document.getElementById("btn").style.display='block'
+                document.getElementById("division").style.display='none';
+            }
+            else{
+                document.getElementById("btn").style.display='none';
+                document.getElementById("division").style.display='block';
+            }
+        }
+        function getSwitch1(){
+            if(document.getElementById("division").style.display=='none'){
+                document.getElementById("division").style.display='block'
+                document.getElementById("btn").style.display='none';
+            }
+            else{
+                document.getElementById("division").style.display='none';
+                document.getElementById("btn").style.display='block';
+            }
+        }
+    </script>
+</body>
+</html>

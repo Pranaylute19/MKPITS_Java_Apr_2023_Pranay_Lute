@@ -1,0 +1,14 @@
+.div1{
+    position: relative;
+    width: 100%;
+    background-color: rgb(16, 10, 2);
+    height: 100%;
+    
+}
+.div2{
+    position: absolute;
+    width: 50%;
+    background-color: antiquewhite;
+    z-index: 1;
+    
+}
