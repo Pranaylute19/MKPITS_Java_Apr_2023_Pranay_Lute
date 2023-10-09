@@ -1,3 +1,10 @@
+// patient age below than 17 of doctor fee is 300
+// & patient age greater than 17 and below 40 of doctor fee is 200
+// & patient age greater than 40 and doctor fee is 400
+// & addition of doctor daily collection maximum daily patient is 10
+
+
+
 
 import java.util.Scanner;
 public class Main {
