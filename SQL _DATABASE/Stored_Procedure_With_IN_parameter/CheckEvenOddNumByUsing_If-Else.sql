@@ -5,7 +5,7 @@ create procedure EVENODD(in numb int)
     if (numb %2=0) then 
 		select "even" ;
         else
-         select "odd";
+         select numb,"odd";
 	end if ;
          End 
          //
