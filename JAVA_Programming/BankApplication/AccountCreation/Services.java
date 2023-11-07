@@ -143,43 +143,95 @@ public class Services {
 
 
     }
-    public int Transfer(Transaction transaction,String userId){
-        int result=0;
+//    public int Transfer(Transaction transaction,String userId){
+//        int result=0;
+//
+//        try {
+//            PreparedStatement preparedStatement=connection.prepareStatement("insert into transaction values (?,?,?,?)");
+//            preparedStatement.setString(1,transaction.getUserid());
+//            preparedStatement.setDate(2,transaction.getDate());
+//            preparedStatement.setInt(3,transaction.getAmount());
+//            preparedStatement.setString(4,transaction.getAmountType());
+//
+//            preparedStatement.executeUpdate();
+//        } catch (SQLException e) {
+//            throw new RuntimeException(e);
+//        }
+//        try {
+//
+//            PreparedStatement preparedStatement=connection.prepareStatement("Update customerdetail set Ammount=Ammount-? where User_id= ?");
+//            preparedStatement.setInt(1,transaction.getAmount());
+//            preparedStatement.setString(2,transaction.getUserid());
+//             preparedStatement.executeUpdate();
+//        } catch (SQLException e) {
+//            throw new RuntimeException(e);
+//        }
+//
+//        try {
+//            PreparedStatement preparedStatement=connection.prepareStatement("Update customerdetail set Ammount=Amount+? where User_id=? ");
+//            preparedStatement.setString(2,userId) ;
+//            preparedStatement.setInt(1,transaction.getAmount());
+//
+//           result= preparedStatement.executeUpdate();
+//
+//
+//        } catch (SQLException e) {
+//            throw new RuntimeException(e);
+//
+//        }
+//        return result;
 
-        try {
-            PreparedStatement preparedStatement=connection.prepareStatement("insert into transaction values (?,?,?,?)");
-            preparedStatement.setString(1,transaction.getUserid());
-            preparedStatement.setDate(2,transaction.getDate());
-            preparedStatement.setInt(3,transaction.getAmount());
-            preparedStatement.setString(4,transaction.getAmountType());
 
-            preparedStatement.executeUpdate();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
+        public int transferReduceAmount(Transaction transactions, String userId) {
+
+            int result = 0;
+            try {
+                PreparedStatement preparedStatement = connection.prepareStatement("insert into transaction values(?,?,?,?)");
+                preparedStatement.setString(1, transactions.getUserid());
+                preparedStatement.setDate(2, transactions.getDate());
+                preparedStatement.setInt(3, transactions.getAmount());
+                preparedStatement.setString(4, transactions.getAmountType());
+                result = preparedStatement.executeUpdate();
+
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+            if (result != 0) {
+                try {
+                    PreparedStatement preparedUpdateStatement = connection.prepareStatement("update customerdetail set Ammount = Ammount - ? where User_id=?");
+                    preparedUpdateStatement.setInt(1, transactions.getAmount());
+                    preparedUpdateStatement.setString(2, transactions.getUserid());
+                    result = preparedUpdateStatement.executeUpdate();
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
+            }
+            if (result != 0)
+                try {
+                    PreparedStatement preparedStatement = connection.prepareStatement("insert into transaction values(?,?,?,?)");
+                    preparedStatement.setString(1, transactions.getUserid());
+                    preparedStatement.setDate(2, transactions.getDate());
+                    preparedStatement.setInt(3, transactions.getAmount());
+                    preparedStatement.setString(4, "Out");
+                    result = preparedStatement.executeUpdate();
+
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
+
+
+            if(result!=0){
+                try{
+                    PreparedStatement preparedUpdateStatement1 = connection.prepareStatement("update customerdetail set Ammount = Ammount + ? where User_id=?");
+                    preparedUpdateStatement1.setInt(1,transactions.getAmount());
+                    preparedUpdateStatement1.setString(2,userId);
+                    result = preparedUpdateStatement1.executeUpdate();
+
+                }catch (Exception e){
+                    System.out.println(e);
+                }
+            }
+            return result;
         }
-        try {
 
-            PreparedStatement preparedStatement=connection.prepareStatement("Update customerdetail set Ammount=Ammount-? where User_id= ?");
-            preparedStatement.setInt(1,transaction.getAmount());
-            preparedStatement.setString(2,transaction.getUserid());
-             preparedStatement.executeUpdate();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-
-        try {
-            PreparedStatement preparedStatement=connection.prepareStatement("Update customerdetail set Ammount=Amount+? where User_id=? ");
-            preparedStatement.setString(2,userId) ;
-            preparedStatement.setInt(1,transaction.getAmount());
-
-           result= preparedStatement.executeUpdate();
-
-
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-
-        }
-        return result;
     }
-}
-
