@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+<bean id="employee"  class="Emp.Employee">
+    <property name="id" value="100"> </property>
+    <property name="name" value="mahesh"></property>
+    <property name="City" value="nagpur"></property>  
+</bean>
+<bean id="fam" class="Emp.FamilyDetails" autowire="byName">
+    <property name="wifeName" value="sundari"></property>
+    <property name="noOfChild" value="2"></property>
+</bean>
+</beans>
