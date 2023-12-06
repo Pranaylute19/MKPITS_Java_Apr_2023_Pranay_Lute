@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <table border="2px"> <tr><td><h3>Roll number :</h3></td><td><p th:text="${stud.roll_no}"></td></tr>
+          <tr><td><h3>Student name :</h3></td><td> <p th:text="${stud.stud_name}"></td></tr>
+          <tr><td> <h3>Address :</h3></td><td>  <p th:text="${stud.stud_address}"></td></tr>
+          <tr><td> <h3>City :</h3> </td><td>  <p th:text="${stud.city}"></td></tr>
+           <tr><td ><h3>Gender :</h3></td><td> <p th:text="${stud.gender}"></td></tr>
+          <tr><td> <h3>Language Known :</h3></td><td> <p th:text="${stud.language}"></td></tr>
+  </table>
+</body>
+</html>
