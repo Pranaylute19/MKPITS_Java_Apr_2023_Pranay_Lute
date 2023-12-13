@@ -7,47 +7,56 @@ import jakarta.persistence.Table;
 import java.util.Date;
 
 @Entity
-@Table
+@Table(name="registration")
 public class Employee {
     @Id
     private int Employee_id;
-    private String name;
-    private String designation;
-    private Date date;
+    private String Name;
+    private String Designation;
+    private Date Date_of_joining;
     private String gender;
 
     public Employee() {
     }
 
-    public Employee(String name, String designation, Date date, String gender) {
-        this.name = name;
-        this.designation = designation;
-        this.date = date;
+    public Employee( String name, String designation, Date date_of_joining, String gender) {
+
+        Name = name;
+        Designation = designation;
+        Date_of_joining = date_of_joining;
         this.gender = gender;
     }
 
+    public int getEmployee_id() {
+        return Employee_id;
+    }
+
+    public void setEmployee_id(int employee_id) {
+        Employee_id = employee_id;
+    }
+
     public String getName() {
-        return name;
+        return Name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        Name = name;
     }
 
     public String getDesignation() {
-        return designation;
+        return Designation;
     }
 
     public void setDesignation(String designation) {
-        this.designation = designation;
+        Designation = designation;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getDate_of_joining() {
+        return Date_of_joining;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDate_of_joining(Date date_of_joining) {
+        Date_of_joining = date_of_joining;
     }
 
     public String getGender() {

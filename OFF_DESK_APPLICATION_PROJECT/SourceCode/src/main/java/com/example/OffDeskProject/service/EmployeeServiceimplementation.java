@@ -2,6 +2,7 @@ package com.example.OffDeskProject.service;
 
 import com.example.OffDeskProject.entity.Employee;
 import com.example.OffDeskProject.property.EmployeeDao;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,12 +15,10 @@ public class EmployeeServiceimplementation implements EmployeeService{
     public EmployeeServiceimplementation(EmployeeDao employeedao) {
         this.employeedao = employeedao;
     }
-
-
-
     @Override
-    public String save(Employee employee) {
+    @Transactional
+    public void save(Employee employee) {
+        employeedao.save(employee);
 
-       return "null";
     }
 }
