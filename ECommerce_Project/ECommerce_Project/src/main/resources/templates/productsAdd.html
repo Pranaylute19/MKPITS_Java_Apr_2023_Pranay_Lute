@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form th:object="${products}" th:action="@{/productpost}" method="post">
+            <input type="text" th:field="*{id}" placeholder="id">
+            <input type="text" th:field="*{name}" placeholder="name">
+
+        <label>Category-id :-</label>
+
+        <select  name="category">
+            <option th:each="cr:${getCategory}" th:value="${cr.id}" th:text="${cr.name}" ></option>
+        </select>
+
+            <input type="text" th:field="*{prize}" placeholder="prize">
+            <input type="text" th:field="*{weight}" placeholder="weight">
+            <input type="text" th:field="*{description}" placeholder="description">
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

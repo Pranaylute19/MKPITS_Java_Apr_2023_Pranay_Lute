@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Product id</th>
+            <th>Product name</th>
+            <th> category id</th>
+            <th> Prize</th>
+            <th> Weight</th>
+            <th>Description</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="ct:${product}">
+            <td th:text="${ct.id}"/>
+            <td th:text="${ct.name}"/>
+            <td th:text="${ct.category.name}"/>
+            <td th:text="${ct.prize}"/>
+            <td th:text="${ct.weight}"/>
+            <td th:text="${ct.description}"/>
+
+            <td><a th:href="@{/postUpdatedata(id =${ct.id})}">Update</a></td>
+
+            <td ><a th:href="@{/product/delete/{id} (id=${ct.id})}">Delete</a></td>
+        </tr>
+
+        </tbody>
+  </table>
+</body>
+</html>
