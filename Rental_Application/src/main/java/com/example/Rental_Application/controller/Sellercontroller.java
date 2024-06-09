@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
+@RequestMapping("seller")
 public class Sellercontroller {
    AddSellerserviceintern addSellerserviceintern;
    AddpropertyServiceinter addpropertyServiceinter;
@@ -55,9 +56,6 @@ public class Sellercontroller {
             return "loginerror";
         }
     }
-
-
-
     @GetMapping("createseller")
     public String addseller(){
         return "sellerAdd";

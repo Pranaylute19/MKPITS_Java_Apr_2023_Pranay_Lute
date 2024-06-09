@@ -13,6 +13,7 @@ import java.security.PublicKey;
 import java.util.List;
 
 @Controller
+@RequestMapping("property")
 public class Propertycontroller {
     AddpropertyServiceinter addpropertyServiceinter;
     @Autowired
